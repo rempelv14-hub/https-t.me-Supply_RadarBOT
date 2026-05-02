@@ -1,0 +1,40 @@
+RAILWAY DEPLOY
+
+На Railway лучше использовать переменные окружения.
+config.py можно не трогать на сервере, если все переменные заданы в Railway Variables.
+
+Нужные переменные:
+
+BOT_TOKEN=токен_бота
+ADMIN_IDS=123456789
+API_ID=12345678
+API_HASH=твой_api_hash
+SESSION_STRING=твоя_telethon_session_string
+
+DATA_DIR=/data
+MIN_SCORE=5
+SCAN_EXISTING_DIALOGS=true
+RECENT_SCAN_LIMIT=30
+
+AUTO_DISCOVERY_ENABLED=true
+AUTO_DISCOVERY_START_DELAY_SECONDS=15
+AUTO_DISCOVERY_INTERVAL_HOURS=12
+AUTO_DISCOVERY_LIMIT_PER_QUERY=5
+AUTO_JOIN_PUBLIC_GROUPS=true
+MAX_AUTO_JOINS_PER_DAY=10
+MIN_GROUP_MEMBERS=100
+ONLY_VALID_GROUPS=true
+FLOODWAIT_EXTRA_SECONDS=60
+
+DISCOVERY_NOTIFY_START=true
+DISCOVERY_NOTIFY_SUMMARY=true
+DISCOVERY_NOTIFY_FLOODWAIT=true
+DISCOVERY_NOTIFY_RESUME=true
+
+PORT=8080
+
+Команда запуска:
+python main.py
+
+Procfile уже есть:
+worker: python main.py
