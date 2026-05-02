@@ -5,17 +5,18 @@
 # Важно: кавычки оставляем там, где они уже стоят.
 
 # 1) Токен бота из BotFather
-BOT_TOKEN = "8464290178:AAH27rfguyLz3SCythX3cTv5_aEJs5ph2B8"
+BOT_TOKEN = "PASTE_BOT_TOKEN_HERE"
 
 # 2) Твой Telegram ID. Можно узнать у @userinfobot
 # Пример: ADMIN_IDS = [123456789]
-ADMIN_IDS = [779528794]
+ADMIN_IDS = [123456789]
 
 # 3) API_ID и API_HASH с https://my.telegram.org/apps
-API_ID = 38801204
-API_HASH = "d19eeedb4b19df985ad376255cf08e04"
+API_ID = 12345678
+API_HASH = "PASTE_API_HASH_HERE"
+
 # 4) Сюда вставишь SESSION_STRING после запуска make_session.py
-SESSION_STRING = "1ApWapzMBu8OjuhYnkpnEciWn1D18V2bxaYJU746FMajonkl2FpPZnAPIqu1MFp4a9aXEMVMAKRTFhwzBUEUnOXDkpdqBXHTAzzcHQ-iczmdOeEIK9N137IEomfRdRrOVejC-oN638Y3k9SqcFJnhe_IaYNnx43JkhDjJUKlu4DL415OE2d2QyqnnylHKExiD5mFNo1EwTgkZK2pQR25M079gNdosiw9w9y2PUqe36fObGQetZy-Q3cylW1-VA7DbbTUxjn4mayK2NJRhSzQ6GnDioFzXB6n7lF4npQIThTk7LTSxJki8uucohvNgRcx6fJcc0cP8KWvrp4TZfCd-nc7iD1tAYmE="
+SESSION_STRING = ""
 
 # ==============================
 # ОСНОВНЫЕ НАСТРОЙКИ
@@ -24,7 +25,7 @@ SESSION_STRING = "1ApWapzMBu8OjuhYnkpnEciWn1D18V2bxaYJU746FMajonkl2FpPZnAPIqu1MF
 DATA_DIR = "data"
 
 # Минимальная оценка, чтобы сообщение считалось лидом
-MIN_SCORE = 5
+MIN_SCORE = 8
 
 # Сканировать последние сообщения в уже подключенных группах при старте
 SCAN_EXISTING_DIALOGS = True
@@ -46,7 +47,8 @@ AUTO_DISCOVERY_INTERVAL_HOURS = 12
 AUTO_DISCOVERY_LIMIT_PER_QUERY = 5
 
 # Вступать ли автоматически в публичные группы
-AUTO_JOIN_PUBLIC_GROUPS = True
+# Лучше сначала False, чтобы не ловить лимиты Telegram.
+AUTO_JOIN_PUBLIC_GROUPS = False
 
 # Максимум авто-вступлений в группы за сутки
 MAX_AUTO_JOINS_PER_DAY = 10
